@@ -17,6 +17,6 @@ jobs:
       run: dotnet build --configuration Release
     - uses: actions/download-artifact@master
       with:
-        name: BlackAndWhiteToColor.dll
-        path: /home/runner/work/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/
-        run: cat /home/runner/work/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/
+        name: /home/runner/work/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/BlackAndWhiteToColor.dll
+        path: public
+        run: cat BlackAndWhiteToColor.dll
