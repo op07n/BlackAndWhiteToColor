@@ -18,7 +18,3 @@ jobs:
     - uses: actions/download-artifact@v1
       with:
         name: artifact
-        path: ./BlackAndWhiteToColor/bin/Release/netcoreapp3.1/BlackAndWhiteToColor.dll
-        run: cat BlackAndWhiteToColor.dll
-        
-
