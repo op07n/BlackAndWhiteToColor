@@ -18,4 +18,5 @@ jobs:
     - uses: actions/download-artifact@master
       with:
         name: BlackAndWhiteToColor.dll
-        path: public
+        path: /home/runner/work/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/
+        run: cat /home/runner/work/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/
