@@ -17,5 +17,5 @@ jobs:
       run: dotnet build --configuration Release
     - uses: actions/download-artifact@master
       with:
-        name: BWCartifacts
+        name: BlackAndWhiteToColor.dll
         path: public
