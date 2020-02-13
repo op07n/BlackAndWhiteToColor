@@ -8,13 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@master
       with:
         dotnet-version: 3.1.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
-    - uses: actions/download-artifact@v1
+    - uses: actions/download-artifact@master
       with:
-        name: $(System.DefaultWorkingDirectory)/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1/BlackAndWhiteToColor.dll
+        name: BlackAndWhiteToColor.dll
+        path: $(System.DefaultWorkingDirectory)/BlackAndWhiteToColor/BlackAndWhiteToColor/bin/Release/netcoreapp3.1
