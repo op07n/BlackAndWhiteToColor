@@ -15,7 +15,6 @@ jobs:
         dotnet-version: 3.1.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
-    - uses: actions/download-artifact@master
+    - uses: actions/upload-artifact@master
       with:
-        name: BlackAndWhiteToColor.dll
-        path: ./bin/Release/netcoreapp3.1
+        name: BlackAndWhiteToColor
